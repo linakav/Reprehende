@@ -1,0 +1,241 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{12153074-5BA8-4253-80D5-812D9DD92B11}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Reprehende</RootNamespace>
+    <AssemblyName>Reprehende</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="assets\css\bootstrapTheme.css" />
+    <Content Include="assets\css\custom.css" />
+    <Content Include="assets\css\responsive.css" />
+    <Content Include="assets\ico\apple-touch-icon-114-precomposed.png" />
+    <Content Include="assets\ico\apple-touch-icon-144-precomposed.png" />
+    <Content Include="assets\ico\apple-touch-icon-57-precomposed.png" />
+    <Content Include="assets\ico\apple-touch-icon-72-precomposed.png" />
+    <Content Include="assets\ico\favicon.png" />
+    <Content Include="assets\img\AjaxLoader.gif" />
+    <Content Include="assets\img\demo-slides\controls.png" />
+    <Content Include="assets\img\demo-slides\css3.png" />
+    <Content Include="assets\img\demo-slides\feather.png" />
+    <Content Include="assets\img\demo-slides\grab.png" />
+    <Content Include="assets\img\demo-slides\modern.png" />
+    <Content Include="assets\img\demo-slides\multi.png" />
+    <Content Include="assets\img\demo-slides\responsive.png" />
+    <Content Include="assets\img\demo-slides\tons.png" />
+    <Content Include="assets\img\demo-slides\touch.png" />
+    <Content Include="assets\img\demo-slides\zombie.png" />
+    <Content Include="assets\img\glyphicons-halflings-green.png" />
+    <Content Include="assets\img\glyphicons-halflings-white.png" />
+    <Content Include="assets\img\glyphicons-halflings.png" />
+    <Content Include="assets\img\owl-logo.png" />
+    <Content Include="assets\js\application.js" />
+    <Content Include="assets\js\bootstrap-collapse.js" />
+    <Content Include="assets\js\bootstrap-tab.js" />
+    <Content Include="assets\js\bootstrap-transition.js" />
+    <Content Include="assets\js\google-code-prettify\prettify.css" />
+    <Content Include="assets\js\google-code-prettify\prettify.js" />
+    <Content Include="assets\js\google-code-prettify\run_prettify.js" />
+    <Content Include="assets\js\jquery-1.9.1.min.js" />
+    <Content Include="controls\breadcrumb.ascx" />
+    <Content Include="css\main.css" />
+    <Content Include="css\normalize.css" />
+    <Content Include="css\normalize.min.css" />
+    <Content Include="css\skeleton.css" />
+    <Content Include="css\style.css" />
+    <Content Include="img\angle.png" />
+    <Content Include="img\banner1.jpg" />
+    <Content Include="img\banner2.jpg" />
+    <Content Include="img\banner3.jpg" />
+    <Content Include="img\banner4.jpg" />
+    <Content Include="img\banner5.jpg" />
+    <Content Include="img\border.png" />
+    <Content Include="img\cart.png" />
+    <Content Include="img\chevron.png" />
+    <Content Include="img\cross-grey.png" />
+    <Content Include="img\cross.png" />
+    <Content Include="img\envelope.png" />
+    <Content Include="img\facebook.png" />
+    <Content Include="img\grey_transparent.png" />
+    <Content Include="img\logo.png" />
+    <Content Include="img\search.png" />
+    <Content Include="img\sprite.png" />
+    <Content Include="img\yellow_transparent.png" />
+    <Content Include="js\html5shiv.js" />
+    <Content Include="js\scripts.js" />
+    <Content Include="js\vendor\jquery-1.10.1.min.js" />
+    <Content Include="js\vendor\modernizr-2.6.2.min.js" />
+    <Content Include="controls\leftMenu.ascx" />
+    <Content Include="services\NewsletterSubscription.asmx" />
+    <Content Include="owl-carousel\AjaxLoader.gif" />
+    <Content Include="owl-carousel\grabbing.png" />
+    <Content Include="owl-carousel\owl.carousel.css" />
+    <Content Include="owl-carousel\owl.carousel.js" />
+    <Content Include="owl-carousel\owl.carousel.min.js" />
+    <Content Include="owl-carousel\owl.theme.css" />
+    <Content Include="owl-carousel\owl.transitions.css" />
+    <Content Include="services\UserRegistration.asmx" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="templates\homepage.aspx" />
+    <Content Include="templates\document.aspx" />
+    <Content Include="templates\register.aspx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Banner.cs" />
+    <Compile Include="controls\breadcrumb.ascx.cs">
+      <DependentUpon>breadcrumb.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="controls\breadcrumb.ascx.designer.cs">
+      <DependentUpon>breadcrumb.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="DatabaseConnection.cs" />
+    <Compile Include="master.Master.cs">
+      <DependentUpon>master.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="master.Master.designer.cs">
+      <DependentUpon>master.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Documents.cs" />
+    <Compile Include="controls\leftMenu.ascx.cs">
+      <DependentUpon>leftMenu.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="controls\leftMenu.ascx.designer.cs">
+      <DependentUpon>leftMenu.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="MainMenu.cs" />
+    <Compile Include="services\NewsletterSubscription.asmx.cs">
+      <DependentUpon>NewsletterSubscription.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="services\UserRegistration.asmx.cs">
+      <DependentUpon>UserRegistration.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Tools.cs" />
+    <Compile Include="templates\homepage.aspx.cs">
+      <DependentUpon>homepage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="templates\homepage.aspx.designer.cs">
+      <DependentUpon>homepage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="templates\document.aspx.cs">
+      <DependentUpon>document.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="templates\document.aspx.designer.cs">
+      <DependentUpon>document.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="templates\register.aspx.cs">
+      <DependentUpon>register.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="templates\register.aspx.designer.cs">
+      <DependentUpon>register.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="obj\Debug\DesignTimeResolveAssemblyReferencesInput.cache" />
+    <Content Include="master.Master" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="bin\" />
+    <Folder Include="obj\Debug\TempPE\" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>30464</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:31981/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

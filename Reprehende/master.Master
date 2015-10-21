@@ -1,0 +1,118 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="master.Master.cs" inherits="Reprehende.Master"%>
+
+<!DOCTYPE html>
+
+<html class="no-js">
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <title>Reprehende Website</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width"/>
+    <link href="/css/normalize.css" rel="stylesheet"/>
+    <link href="/css/normalize.min.css" rel="stylesheet"/>
+    <link href="/css/main.css" rel="stylesheet"/>
+    <link href="/css/skeleton.css" rel="stylesheet"/>
+    <link href="/owl-carousel/owl.carousel.css" rel="stylesheet"/>
+    <link href="/owl-carousel/owl.theme.css" rel="stylesheet"/>
+    <link href="/assets/js/google-code-prettify/prettify.css" rel="stylesheet"/>
+    <link href="/css/style.css" rel="stylesheet"/>
+    <!--[if lt IE 9]>
+        <script src="js/html5shiv.js"></script>
+    <![endif]-->
+</head>
+<body>
+    <div class="wrapper">
+        <div class="header_wrapper clearfix">
+            <header class="header"> 
+                <figure class="header_left">
+                    <a href="/templates/homepage.aspx?id=1"><img src="/img/logo.png" alt="Reprehende Website" width="333" height="37"></a>
+                </figure><!-- End header_left -->
+                <aside class="header_right">
+                    <div>
+                        <form class="search_form clearfix" action="#">
+                            <input class="search_txt" placeholder="Αναζήτηση" type="text" name="searchtext">
+                            <input class="search_btn" type="submit" value="">
+                        </form>
+                    </div>
+                    <div>
+                        <a class="fb_btn item" href="https://www.facebook.com/" target="_blank"></a>
+                    </div>
+                    <div>
+                        <a class="login item" href="/templates/register.aspx?id=20">Log&nbsp;in</a>
+                        <span class="logout item">Έξοδος</span>
+                    </div>
+                    <div>
+                        <a class="wishlist item" href="#">Wishlist&nbsp;/&nbsp;<span class="blue_char">0</span></a>
+                    </div>
+                    <div>
+                        <a class="cart_btn item" href="#"></a>
+                    </div>
+                    <div>
+                        <a class="blue_box item" href="#">Το καλάθι μου 0&nbsp;Προϊόντα / 0,00&#8364;</a>
+                    </div>
+                    <div class="lang lastchild">
+                        <ul>
+                            <li><a class="item" href="#">EN</a></li>
+                            <li class="lastchild"><a class="item" href="#">GR</a></li>
+                        </ul>
+                    </div>
+                </aside> <!-- End header-right -->
+            </header>
+        </div> <!-- End header-wrapper -->
+        <header class="main_menu_wrapper">
+            <asp:Repeater runat="server" ID="MainMenuRepeater" OnItemDataBound="MainMenuRepeater_ItemDataBound">
+                <HeaderTemplate>
+                    <nav>
+                        <ul class="main_menu_list">
+                </HeaderTemplate>
+                <ItemTemplate>
+                <li runat="server" id="MainMenuLI" class="main_menu_item">
+                    <asp:HyperLink id="MainMenuLink" runat="server" />
+                </li>
+                </ItemTemplate>
+                <FooterTemplate>
+                        </ul>
+                    </nav>
+                </FooterTemplate>
+            </asp:Repeater>
+        </header> <!-- End navigation_wrapper -->
+            
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server"/>
+        
+        <footer class="footer_wrapper">
+            <asp:Repeater ID="FooterBannersRepeater" runat="server" OnItemDataBound="FooterBannersRepeater_ItemDataBound">
+                <HeaderTemplate>
+                    <div class="bottom_bar clearfix">
+                </HeaderTemplate>
+                <ItemTemplate>
+                    <asp:HyperLink runat="server" ID="TextBnrLnk"/>
+                </ItemTemplate>
+                <FooterTemplate>
+                    </div>
+                </FooterTemplate>
+            </asp:Repeater>
+            <div class="newsletter_bar clearfix">
+                <div class="newsletter_desc">
+                    <span class="title">EXCEPTEUR SINT</span>
+                    <span class="description">Duis aute irure dolor in reprehenderit in voluptate velit esse dolore eu fugiat.</span>
+                </div>
+                <form action="#" class="newsletter_form clearfix">
+                    <input class="nl_inp" type="text" placeholder="Email..." name="e-mail"/>
+                    <button class="nl_btn">ΕΓΓΡΑΦΗ</button>
+                    <span class="message empty_error">Συμπληρώστε το email σας</span>
+                    <span class="message invalid_error">Συμπληρώστε ένα έγγυρο email</span>
+                    <span class="message duplicate_error">Έχετε ήδη γραφτεί στο newsletter</span>
+                    <span class="message newsletter_success">Γραφτήκατε επιτυχώς στο newsletter</span>
+                    <span class="message generic_error">Παρουσιάστηκε κάποιο σφάλμα. Παρακαλώ προσπαθήστε ξανά αργότερα.</span>
+                </form>
+            </div> <!-- End newsletter_bar -->
+        </footer> <!-- End footer_wrapper -->
+    </div> <!-- End wrapper -->
+
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="/js/vendor/jquery-1.10.1.min.js"><\/script>')</script>
+    <script src="/js/scripts.js"></script>
+    <script src="/owl-carousel/owl.carousel.js"></script>
+</body>
+</html>
